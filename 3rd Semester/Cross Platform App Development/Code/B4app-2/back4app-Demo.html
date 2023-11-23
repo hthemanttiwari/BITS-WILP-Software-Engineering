@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Demo App BITS Using back4app</title>
+<script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+
+<script type="text/javascript" type="text/javascript">
+Parse.initialize ("zoSunLUrNvxqtajS3CuGjQjDIu7ysZQPEkBzdopo", "GfI0XpdkMaOTlLxqcx66C5Ar5wmVUDOLLxgwMxF9");
+Parse.serverURL = 'https://parseapi.back4app.com/'
+</script>
+<script type="text/javascript" src="CRUD.js"></script>
+
+</head>
+<body>
+<h1>Back4App CRUD Demo</h1>
+
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname"><br><br>
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname"><br><br>
+<button onclick="postData()">Create</button><br><br> 
+
+<button onclick="getData()">Get</button><br><br>
+
+
+<label for="u_objectId">objectId:</label>
+<input type="text" id="u_objectId" name="objectId"><br><br>
+<label for="u_fname">New_fname:</label>
+<input type="text" id="u_fname" name="fname"><br><br>
+<label for="u_lname">New_lname:</label>
+<input type="text" id="u_lname" name="lname"><br><br>
+<button onclick="updateData()">Update</button><br><br>
+
+<label for="d_objectId">objectId:</label>
+<input type="text" id="d_objectId" name="objectId"><br><br>
+<button onclick="deleteData()">Delete</button><br><br>
+</body>
+
+</html>

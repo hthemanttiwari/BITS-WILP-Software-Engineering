@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Back4app API call Demo</h1>
+<h2>The URL Property</h2>
+
+<p id="demo"></p>
+
+<script>
+	let url = window.document.URL;
+	document.getElementById("demo").innerHTML = url;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+ /* Add some basic styling for the grid */
+        .data-grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 5px;
+        }

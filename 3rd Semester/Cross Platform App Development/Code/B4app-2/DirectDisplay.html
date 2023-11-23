@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Data Display</title>
+</head>
+ 
+<script type="text/javascript" src="APIUICRUD.js"></script>
+<link rel="stylesheet" type="text/css" href="APIUICRUD.css">
+<body>
+    <h1>Data from API</h1>
+    <div class="data-grid" id="data-container">
+         <!-- Data will be displayed here -->
+    </div>
+<h2>Update Data by ID</h2>
+    <input type="text" id="update-id" placeholder="Enter ID to update">
+    <input type="text" id="update-fname" placeholder="Enter updated fname">
+    <input type="text" id="update-lname" placeholder="Enter updated lname">
+    <button onclick="putDataUsingFetch()">Update Data</button>
+
+    <h2>Delete Data by ID</h2>
+    <input type="text" id="delete-id" placeholder="Enter ID to delete">
+    <button onclick="deleteDataUsingFetch()">Delete Data</button>
+
+     
+</body>
+</html>

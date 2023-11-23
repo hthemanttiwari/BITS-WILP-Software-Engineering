@@ -1,0 +1,20 @@
+To create or update an item
+Use the following command to create or update an item. The command includes a request body with the item's ID, price, and name.
+curl -v -X "PUT" -H "Content-Type: application/json" -d "{\"id\": \"2\", \"price\": 120, \"name\": \"three\"}" https://hcc8ty3yqa.execute-api.eu-north-1.amazonaws.com/items
+
+curl -v -X "PUT" -H "Content-Type: application/json" -d "{\"id\": \"1\", \"price\": 12345, \"name\": \"myitem two\"}" https://hcc8ty3yqa.execute-api.eu-north-1.amazonaws.com/items
+
+To get all items
+Use the following command to list all items.
+curl -v https://hcc8ty3yqa.execute-api.eu-north-1.amazonaws.com/items
+
+To get an item
+Use the following command to get an item by its ID.
+curl -v https://hcc8ty3yqa.execute-api.eu-north-1.amazonaws.com/1
+
+To delete an item
+Use the following command to delete an item.
+curl -v -X "DELETE" https://hcc8ty3yqa.execute-api.eu-north-1.amazonaws.com/items/2
+
+Get all items to verify that the item was deleted.
+curl -v https://hcc8ty3yqa.execute-api.eu-north-1.amazonaws.com/items
